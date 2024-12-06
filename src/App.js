@@ -10,7 +10,7 @@ function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(checkUser());
-  }, [])
+  }, [dispatch])
   const {isAuthenticated} = useSelector((state) => state.auth);
   return (
     <Router>
