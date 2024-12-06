@@ -19,7 +19,7 @@ const Header = () => {
 
   const handleLogoutClick = () => {
     localStorage.removeItem("authToken");
-    window.location.reload();
+    window.location.href = 'https://employwise1.netlify.app/';
     
   };
 
